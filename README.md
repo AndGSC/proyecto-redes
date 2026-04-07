@@ -11,12 +11,12 @@
 - [ ] Definir si habrá colaboradores con acceso al resource group
 - [ ] Registrar quién tendrá acceso y con qué rol
 
-- [ ] Crear el repositorio en GitHub
-- [ ] Definir el nombre final del repositorio
-- [ ] Elegir si el repositorio será privado o público
-- [ ] Inicializar el repositorio con README
-- [ ] Agregar colaboradores al repositorio si aplica
-- [ ] Crear la estructura base de carpetas del proyecto
+- [X] Crear el repositorio en GitHub
+- [X] Definir el nombre final del repositorio
+- [X] Elegir si el repositorio será privado o público
+- [X] Inicializar el repositorio con README
+- [X] Agregar colaboradores al repositorio si aplica
+- [X] Crear la estructura base de carpetas del proyecto
 
 - [ ] Generar el par de llaves SSH
 - [ ] Guardar la clave privada en una ruta segura
