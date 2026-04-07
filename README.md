@@ -1,40 +1,60 @@
 # Proyecto de Redes - Andrey Solís Carvajal, Javier Garita Granados, ...
 
 
-## Parte 0 - Requerimientos Generales
+# Checklist — Fase 0
 
-### 1. Cuentas Azure
-- Cuenta A (infraestructura web): [correo / responsable]
-- Cuenta B (Windows AD): [correo / responsable]
-- Persona que certifica: [nombre]
-- Resource group principal: [nombre]
+- [ ] Definir qué cuenta de Azure manejará la infraestructura principal
+- [ ] Definir qué cuenta de Azure manejará la VM de Windows Server 2016 / Active Directory
+- [ ] Definir quién será la persona que se certifica
+- [ ] Confirmar que ambas cuentas tienen suscripción activa
+- [ ] Definir el nombre del resource group principal
+- [ ] Definir si habrá colaboradores con acceso al resource group
+- [ ] Registrar quién tendrá acceso y con qué rol
 
-### 2. GitHub
-- Repositorio: [nombre]
-- Owner: [usuario]
-- Colaboradores: [lista]
+- [ ] Crear el repositorio en GitHub
+- [ ] Definir el nombre final del repositorio
+- [ ] Elegir si el repositorio será privado o público
+- [ ] Inicializar el repositorio con README
+- [ ] Agregar colaboradores al repositorio si aplica
+- [ ] Crear la estructura base de carpetas del proyecto
 
-### 3. SSH
-- Equipo donde se generó la llave: [equipo]
-- Ruta clave privada: [ruta]
-- Ruta clave pública: [ruta]
-- Nota: la clave privada no se sube al repo
+- [ ] Generar el par de llaves SSH
+- [ ] Guardar la clave privada en una ruta segura
+- [ ] Verificar la ubicación de la clave pública
+- [ ] Confirmar que la clave privada no se subirá al repositorio
+- [ ] Documentar qué llave SSH se usará para las VMs
 
-### 4. Dominio
-- FQDN final: [ej. login-redes.midominio.com]
-- Proveedor DNS: [nombre]
-- Método previsto: [HTTP-01 o DNS-01]
+- [ ] Definir el dominio o subdominio que se usará para el login
+- [ ] Confirmar acceso al proveedor DNS
+- [ ] Confirmar que se pueden crear registros A
+- [ ] Confirmar que se pueden crear registros TXT si se usa DNS-01
+- [ ] Elegir el método de validación de Let’s Encrypt
+- [ ] Documentar el FQDN final del proyecto
 
-### 5. Nombres Azure
-- RG:
-- VNet:
-- Subnet:
-- NSG:
-- LB:
-- Public IP:
-- VM web 1:
-- VM web 2:
-- VM AD:
+- [ ] Definir la convención de nombres para recursos en Azure
+- [ ] Definir el nombre del Resource Group
+- [ ] Definir el nombre de la VNet
+- [ ] Definir el nombre de la Subnet
+- [ ] Definir el nombre del NSG
+- [ ] Definir el nombre del Load Balancer
+- [ ] Definir el nombre de la Public IP
+- [ ] Definir el nombre de la VM web 1
+- [ ] Definir el nombre de la VM web 2
+- [ ] Definir el nombre de la VM de Active Directory
+- [ ] Documentar todos los nombres finales
+
+- [ ] Definir desde dónde se ejecutará Ansible
+- [ ] Confirmar si se usará laptop local con WSL o una VM de control
+- [ ] Confirmar que el entorno de control tendrá acceso SSH a las VMs privadas
+- [ ] Confirmar si se usará Azure Bastion
+- [ ] Documentar el método de acceso administrativo
+
+- [ ] Crear el archivo de documentación de fase 0
+- [ ] Registrar responsables, cuentas y accesos
+- [ ] Registrar dominio, método de validación y proveedor DNS
+- [ ] Registrar nombres finales de los recursos
+- [ ] Registrar la decisión del nodo de control de Ansible
+- [ ] Verificar que toda la fase 0 quede escrita antes de iniciar Terraform
 
 ### 6. Ansible
 - Control node: [ej. WSL Ubuntu local]
