@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111827;
+    color: #f9fafb;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 560px;
+}
+
+.card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.info {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 18px;
+    color: #d1d5db;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #4b5563;
+    background: #0f172a;
+    color: white;
+}
+
+button {
+    margin-top: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #4b5563;
+    cursor: not-allowed;
+}
+
+.secondary {
+    background: #059669;
+    width: 100%;
+}
+
+.secondary:hover {
+    background: #047857;
+}
+
+.message {
+    display: none;
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.message.ok {
+    display: block;
+    background: #064e3b;
+    border: 1px solid #10b981;
+}
+
+.message.error {
+    display: block;
+    background: #7f1d1d;
+    border: 1px solid #ef4444;
+}
+
+#usersSection {
+    display: none;
+    margin-top: 22px;
+}
+
+#usersSection.visible {
+    display: block;
+}
+
+#usersList {
+    list-style: none;
+    padding: 0;
+}
+
+#usersList li {
+    background: #111827;
+    border: 1px solid #374151;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #e5e7eb;
+}
