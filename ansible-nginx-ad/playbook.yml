@@ -7,12 +7,11 @@
     app_dir: /opt/redes-ad-web
     app_port: 8000
 
-    ad_server_ip: "10.20.1.10"
+    ad_server_ip: "10.10.1.20"
     ad_domain: "redes.local"
     ad_base_dn: "DC=redes,DC=local"
-
     ad_bind_dn: "CN=ldapreader,CN=Users,DC=redes,DC=local"
-    ad_bind_password: "LDAPReader2026!"
+    ad_bind_password: "Redes2026"
 
     cert_dir: /etc/nginx/ssl
     cert_file: /etc/nginx/ssl/redesproject.crt
