@@ -48,6 +48,10 @@ jobs:
 
       - name: Deploy to ACI
         run: |
+          az container delete \
+            --resource-group rg-proyecto-redes \
+            --name mi-app-container \
+            --yes || true
           az container create \
             --resource-group rg-proyecto-redes \
             --name mi-app-container \
